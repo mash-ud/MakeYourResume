@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+            <ImageView
+                android:id="@+id/pic"
+                android:src="@drawable/add_image1600"
+                android:scaleType="fitXY"
+                android:layout_width="80dp"
+                android:layout_height="80dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/fName"
+                android:layout_marginRight="2dp"
+                android:padding="10dp"
+                android:background="@drawable/border_text"
+                android:hint="First Name"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+            <EditText
+                android:id="@+id/lName"
+                android:layout_marginLeft="2dp"
+                android:padding="10dp"
+                android:background="@drawable/border_text"
+                android:hint="Last Name"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+        <EditText
+            android:id="@+id/email"
+            android:drawableLeft="@drawable/ic_mail_black_24dp"
+            android:drawablePadding="10dp"
+            android:layout_marginTop="5dp"
+            android:padding="10dp"
+            android:background="@drawable/border_text"
+            android:hint="Email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/phn"
+            android:drawableLeft="@drawable/ic_call_black_24dp"
+            android:drawablePadding="10dp"
+            android:layout_marginTop="5dp"
+            android:padding="10dp"
+            android:background="@drawable/border_text"
+            android:hint="Contact No."
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:padding="5dp"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="Gender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView4" />
+
+        <RadioGroup
+            android:id="@+id/gender"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/male"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:text="Male"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+
+            <RadioButton
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:text="Female"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/female" />
+        </RadioGroup>
+
+
+        <TextView
+            android:padding="5dp"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="Date of Birth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Spinner
+                android:id="@+id/month"
+                android:padding="20dp"
+                style="@android:style/Widget.Holo.Light.Spinner"
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+            </Spinner>
+            <Spinner
+                android:id="@+id/year"
+                android:padding="20dp"
+                style="@android:style/Widget.Holo.Light.Spinner"
+                android:layout_weight="1.5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+            </Spinner>
+            <Spinner
+                android:id="@+id/day"
+                android:padding="20dp"
+                style="@android:style/Widget.Holo.Light.Spinner"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+            </Spinner>
+
+        </LinearLayout>
+
+        <TextView
+            android:padding="10dp"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/white"
+            android:background="@color/colorAccent"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:text="Education Qualification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView3" />
+
+        <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:gravity="center"
+            android:textSize="18dp"
+            android:textColor="@color/white"
+            android:text="SSC from"
+            android:layout_weight=".9"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <EditText
+            android:id="@+id/school"
+            android:hint="School"
+            android:padding="10dp"
+            android:background="@drawable/border_text"
+            android:layout_weight="1.5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:gravity="center"
+            android:textSize="18dp"
+            android:textColor="@color/white"
+            android:text="with"
+            android:layout_weight=".5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <EditText
+            android:id="@+id/sclGPA"
+            android:hint="GPA"
+            android:padding="10dp"
+            android:background="@drawable/border_text"
+            android:layout_weight=".8"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:gravity="center"
+                android:textSize="18dp"
+                android:textColor="@color/white"
+                android:text="HSC from"
+                android:layout_weight=".9"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+
+            <EditText
+                android:hint="College"
+                android:padding="10dp"
+                android:background="@drawable/border_text"
+                android:layout_weight="1.5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/college" />
+
+            <TextView
+                android:gravity="center"
+                android:textSize="18dp"
+                android:textColor="@color/white"
+                android:text="with"
+                android:layout_weight=".5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+            <EditText
+                android:id="@+id/hscGPA"
+                android:hint="GPA"
+                android:padding="10dp"
+                android:background="@drawable/border_text"
+                android:layout_weight=".8"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:gravity="center"
+                android:textSize="18dp"
+                android:textColor="@color/white"
+                android:text="B.Sc from"
+                android:layout_weight=".9"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/textView" />
+
+            <EditText
+                android:hint="University"
+                android:padding="10dp"
+                android:background="@drawable/border_text"
+                android:layout_weight="1.5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/uni" />
+
+            <TextView
+                android:gravity="center"
+                android:textSize="18dp"
+                android:textColor="@color/white"
+                android:text="with"
+                android:layout_weight=".5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+
+            <EditText
+                android:hint="CGPA"
+                android:padding="10dp"
+                android:background="@drawable/border_text"
+                android:layout_weight=".8"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/CGPA" />
+        </LinearLayout>
+        <TextView
+            android:padding="10dp"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/white"
+            android:background="@color/colorAccent"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:text="Skills"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Switch
+                android:id="@+id/programmingSwt"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:text="Programming"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <LinearLayout
+                android:visibility="gone"
+                android:orientation="vertical"
+                android:id="@+id/programmingLyt"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <CheckBox
+                    android:id="@+id/java"
+                    android:textColor="@color/white"
+                    android:text="JAVA"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <CheckBox
+                    android:id="@+id/CPlus"
+                    android:textColor="@color/white"
+                    android:text="C++/C"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <CheckBox
+                    android:id="@+id/phython"
+                    android:textColor="@color/white"
+                    android:text="PHYTHON"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <CheckBox
+                    android:id="@+id/php"
+                    android:textColor="@color/white"
+                    android:text="PHP"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <CheckBox
+                    android:id="@+id/cSharp"
+                    android:textColor="@color/white"
+                    android:text="C##"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <CheckBox
+                    android:id="@+id/css"
+                    android:textColor="@color/white"
+                    android:text="HTML/CSS"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <Switch
+            android:id="@+id/databaseSwt"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="Database"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+            <LinearLayout
+                android:id="@+id/databaseLyt"
+                android:visibility="gone"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <CheckBox
+                    android:id="@+id/oracle"
+                    android:textColor="@color/white"
+                    android:text="Oracle Database"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <CheckBox
+                    android:id="@+id/sql"
+                    android:textColor="@color/white"
+                    android:text="MY SQL"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <CheckBox
+                    android:id="@+id/firebase"
+                    android:textColor="@color/white"
+                    android:text="Firebase"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <CheckBox
+                    android:id="@+id/sqlite"
+                    android:textColor="@color/white"
+                    android:text="SQLite"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <Switch
+                android:id="@+id/businessSwt"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:text="Business Skills"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <LinearLayout
+                android:id="@+id/businessLyt"
+                android:visibility="gone"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <CheckBox
+                    android:id="@+id/com"
+                    android:textColor="@color/white"
+                    android:text="Communication"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <CheckBox
+                    android:id="@+id/lead"
+                    android:textColor="@color/white"
+                    android:text="Leadership"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <CheckBox
+                    android:id="@+id/creativity"
+                    android:textColor="@color/white"
+                    android:text="Creativity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView
+            android:padding="10dp"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/white"
+            android:background="@color/colorAccent"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:text="Projects"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/project"
+            android:background="@drawable/border_text"
+            android:ellipsize="start"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:hint="Write Something About Your Project"
+            android:layout_width="match_parent"
+            android:layout_height="80dp" />
+
+        <TextView
+            android:padding="10dp"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/white"
+            android:background="@color/colorAccent"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:text="Achievements"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:background="@drawable/border_text"
+            android:ellipsize="start"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:hint="Write Something About Your Achievements"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:id="@+id/achivement" />
+
+        <Button
+            android:id="@+id/confirm"
+            android:textColor="@color/white"
+            android:background="@drawable/border_button"
+            android:text="Confirm"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+</ScrollView>
